@@ -24,13 +24,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             SystemBarColorsTheme {
                 // A surface container using the 'background' color from the theme
-                val systemUiController = rememberSystemUiController()
-                val DarkTheam = isSystemInDarkTheme()
-                SideEffect {
-                    systemUiController.setSystemBarsColor(
-                        color = if(DarkTheam) Color.LightGray else Pink40
-                    )
-                }
+
             }
         }
     }
